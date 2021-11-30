@@ -2,46 +2,36 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 
-const val TAG = "MainActivity"
+lateinit var userRecyclerView: RecyclerView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Log.d(TAG, "Словесность русская больна.")
+
+        val userList: List<User> = listOf(
+            User("Ivan", 20),
+            User("Helen", 19),
+            User("Anna", 21),
+            User("Max", 25)
+        )
+
+        userRecyclerView = findViewById(R.id.user_recycle_view)
+        userRecyclerView.layoutManager = LinearLayoutManager(
+            this,
+            LinearLayoutManager.VERTICAL,
+            false
+        )
+        userRecyclerView.adapter = UserAdapter(userList)
     }
 
-    override fun onStart() {
-        super.onStart()
-        Log.d(TAG, "Лежит в истерике она\n")
-    }
 
-    override fun onResume() {
-        super.onResume()
-        Log.d(TAG, "И бредит языком мечтаний,\n")
-    }
+    //RecyclerView
 
-    override fun onPause() {
-        super.onPause()
-        Log.d(TAG, "И хладный между тем зоил\n")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.d(TAG, "Ей Каченовский застудил\n")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d(TAG, "Теченье месячных изданий.\n")
-    }
 }
