@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">New World</string>
+    <string name="welcome">Welcome</string>
+    <string name="hello">Hello</string>
+    <string name="ok">OK</string>
+    <string name="back">Back</string>
+    <string name="Forward">Вперед</string>
+</resources>
