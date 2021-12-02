@@ -15,20 +15,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val userList: List<User> = listOf(
-            User("Ivan", 20),
-            User("Helen", 19),
-            User("Anna", 21),
-            User("Max", 25)
-        )
-
-        userRecyclerView = findViewById(R.id.user_recycle_view)
-        userRecyclerView.layoutManager = LinearLayoutManager(
-            this,
-            LinearLayoutManager.VERTICAL,
-            false
-        )
-        userRecyclerView.adapter = UserAdapter(userList)
+//        val userList: List<User> = listOf(
+//            User("Ivan", 20),
+//            User("Helen", 19),
+//            User("Anna", 21),
+//            User("Max", 25)
+//        )
+//
+//        userRecyclerView = findViewById(R.id.user_recycle_view)
+//        userRecyclerView.layoutManager = LinearLayoutManager(
+//            this,
+//            LinearLayoutManager.VERTICAL,
+//            false
+//        )
+//        userRecyclerView.adapter = UserAdapter(userList)
     }
 
 

@@ -5,4 +5,7 @@
     <string name="ok">OK</string>
     <string name="back">Back</string>
     <string name="Forward">Вперед</string>
+    <string name="register">REGISTER</string>
+    <string name="sign_in">Sign in</string>
+    <string name="welcome_to_android">Welcome to Android</string>
 </resources>
