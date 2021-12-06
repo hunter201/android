@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">New World</string>
+    <string name="app_name">CraZZZy Berry</string>
     <string name="welcome">Welcome</string>
     <string name="hello">Hello</string>
     <string name="ok">OK</string>
@@ -17,4 +17,9 @@
     <string name="third">third</string>
     <string name="this_is_second_fragment">This is Second Fragment</string>
     <string name="this_is_first_fragment">This is First Fragment</string>
+    <string name="spin">SPIN</string>
+    <string name="bingo">BINGO!</string>
+    <string name="play">PLAY</string>
+    <string name="list_of_combinations">List of Combinations</string>
+    <string name="visit_us">Visit Us</string>
 </resources>
